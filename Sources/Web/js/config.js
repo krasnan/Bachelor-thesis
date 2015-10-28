@@ -1,8 +1,8 @@
 var tSources = {
-    'Názov zdroja':'#'
+    'Zdroje budú pridané čoskoro':'#'
 };
 var pSources = {
-    'Názov zdroja':'#'
+    'Zdroje budú pridané čoskoro':'#'
 };
 var diary = {
     '24.10.2015':'Navrhnutá webová stránka bakalárskej práce.',
