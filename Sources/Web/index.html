@@ -185,9 +185,9 @@
         </div>
         <div class="container ">
             <div class="row">
-                <div class="col-lg-6 text-center">
+                <div class="col-md-6 text-center">
                     <div class="timeline-box">
-                        <h3>Zdroje k teoretickej časti:</h3>
+                        <h3>Zdroje k teoretickej časti, podobné práce:</h3>
                         <hr class="light">
                     </div>
                     <!-- zdroje k praktickej casti -->
@@ -195,7 +195,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
+                <div class="col-md-6 text-center">
                     <div class="timeline-box">
                         <h3>Zdroje k praktickej časti:</h3>
                         <hr class="light">
@@ -223,7 +223,7 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-sm-4">
-                    <a id="prezentaciaZdrojov" href="" class="image-box" target="blank">
+                    <a id="prezentaciaZdrojov" class="image-box" target="blank">
                         <img src="img/download/1.jpg" class="img-responsive" alt="">
                         <div class="image-box-caption">
                             <div class="image-box-caption-content">
@@ -238,7 +238,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4">
-                    <a id="vychodiskovaKapitoloa" href="" class="image-box" target="blank">
+                    <a id="vychodiskovaKapitoloa" class="image-box" target="blank">
                         <img src="img/download/2.jpg" class="img-responsive" alt="">
                         <div class="image-box-caption">
                             <div class="image-box-caption-content">
@@ -253,7 +253,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4">
-                    <a id="finalnaPraca" href="" class="image-box" target="blank">
+                    <a id="finalnaPraca" class="image-box" target="blank">
                         <img src="img/download/3.jpg" class="img-responsive" alt="">
                         <div class="image-box-caption">
                             <div class="image-box-caption-content">
@@ -350,10 +350,10 @@
     }
     function printSources(tSources, pSources){
         $.each(tSources, function(title, link){
-            $("#tSources").append('<div class="row-fluid"><p class="text-muted">' + title + ' <a href="' + link + '"><i class="fa fa-external-link wow bounceIn text-primary"></i></a></p></div>');
+            $("#tSources").append('<div class="row-fluid"><p class="text-muted">' + title + ' <a href="' + link + '" target="blank"><br><i class="fa fa-external-link wow bounceIn text-primary"></i></a></p></div>');
         });
         $.each(pSources, function(title, link){
-            $("#pSources").append('<div class="row-fluid"><p class="text-muted">' + title + ' <a href="' + link + '"><i class="fa fa-external-link wow bounceIn text-primary"></i></a></p></div>');
+            $("#pSources").append('<div class="row-fluid"><p class="text-muted">' + title + ' <a href="' + link + '" target="blank"><br><i class="fa fa-external-link wow bounceIn text-primary"></i></a></p></div>');
         });
     }
     $(document).on('ready', function(){
